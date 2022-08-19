@@ -1,9 +1,11 @@
 # gitlab-runner-on-ec2
 Setting up Gitlab Runner on AWS Amazon Linux EC2
 
-##Part 1: Create Amazon Linux EC2 in AWS
+## Part 1: Create Amazon Linux EC2 in AWS
  Go to your AWS account
+ 
  Go to EC2 instance , click Launch instance
+ 
  Enter the name for the instance
  Under AMI, select Amazon Linux 2
  Instance type, t2.micro
@@ -13,7 +15,7 @@ Setting up Gitlab Runner on AWS Amazon Linux EC2
  Check the summary to confirm
  Click Launch instance
 
-##Part 2: ssh to EC2 instance
+## Part 2: ssh to EC2 instance
  Open terminal
  Locate your private key file and cd to it
  Change the permission of the key by running this command:
@@ -23,13 +25,13 @@ Setting up Gitlab Runner on AWS Amazon Linux EC2
  Example:
   `ssh -i "<private_key.pem>" ec2-user@ec2-public_ip.ap-southeast-1.compute.amazonaws.com`
  
-##Part 3: Installing GitLab Runner
+## Part 3: Installing GitLab Runner
  Once ssh to EC2 done, install by running these commands
   `sudo yum update`
   `curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | sudo bash`
   `sudo yum install gitlab-runner`
  
-##Part 4: Register a runner
+## Part 4: Register a runner
  Before registering, you need to obtain a few things from GitLab:
  GitLab Instance URL and Registration Token
  To obtain these, Log In to your GitLab
@@ -44,7 +46,7 @@ Setting up Gitlab Runner on AWS Amazon Linux EC2
  Provide the runner executor. For most use cases, enter docker.
  If you entered docker as your executor, you are asked for the default image to be used for projects that do not define one in .gitlab-ci.yml.
 
-##Part 5: Confirm that GitLab Runner is running
+## Part 5: Confirm that GitLab Runner is running
  run these commands:
   `sudo gitlab-runner --version`
   `sudo gitlab-runner status`
