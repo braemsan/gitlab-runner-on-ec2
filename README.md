@@ -1,4 +1,4 @@
-![Header](/images/GitLab Runner on EC2.png)
+![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/braemsan/gitlab-runner-on-ec2/blob/main/GitLab%20Runner%20on%20EC2.png))
 
 
 # gitlab-runner-on-ec2
