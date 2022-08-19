@@ -90,3 +90,9 @@ Once you see this
 ![This is an image](https://github.com/braemsan/gitlab-runner-on-ec2/blob/main/Screenshot%202022-08-19%20at%204.13.58%20PM.png)
 
 Congratulations, you have successfully set up GitLab Runner on EC2 Instance
+
+## Reference
+
+https://www.youtube.com/watch?v=77nk8apY-jg
+
+https://docs.gitlab.com/runner/install/linux-repository.html
